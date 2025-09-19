@@ -34,6 +34,8 @@ void bai1()
             printf("\nHien P Ra : %c \n", Array[i]);
         }
     }
+
+    printf("\n");
 }
 
 struct ClassRoom
@@ -50,6 +52,7 @@ void bai2_1()
     printf("Nhap So Phong: ");
     scanf("%d", &cr.roomNo);
     printf("\nTen Phong: %s\nSo Phong: %d\n", cr.roomName, cr.roomNo);
+    printf("\n");
 }
 
 struct ClassRoom arr[3];
@@ -62,13 +65,12 @@ void bai2_3()
     {
         if (arr[i].roomNo == 0)
         {
-            printf("Phong %d chua duoc nhap.\n", i + 1);
+            printf("Phong %d Chua Duoc Nhap.\n", i + 1);
             continue;
         }
         else
         {
-            printf("Ten Phong: %s\n", arr[i].roomName);
-            printf("So Phong: %d\n", arr[i].roomNo);
+            printf("Ten Phong: %s - So Phong: %d\n", arr[i].roomName, arr[i].roomNo);
         }
     }
     printf("\n");
