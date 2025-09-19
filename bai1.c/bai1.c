@@ -6,4 +6,5 @@ int main() {
     for(int i = 0 ; i < strlen(a) ; i++) {
     	printf("%c\n",a[i]);
 	}
+    return 0;
 }
