@@ -6,7 +6,7 @@ void display_array(char arr[], int length)
     {
         if (arr[i] == 'p')
         {
-            printf("Char `%c` is in position %d\n", arr[i], i);
+            printf("Char `%c` is in position %d\n", arr[i], i+1);
         }
     }
 }
