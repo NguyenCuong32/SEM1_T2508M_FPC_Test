@@ -59,8 +59,8 @@ struct ClassRoom arr[3];
 void bai2_3()
 {
     printf("\n");
-    
-    for (int i = 0; i < 3; i++)
+
+    for (int i = 0; i < 10; i++)
     {
         if (arr[i].roomNo == 0)
         {
@@ -78,7 +78,7 @@ void bai2_3()
 
 void bai2_2()
 {
-    for (int i = 0; i < 3; i++)
+    for (int i = 0; i < 10; i++)
     {
         printf("Nhap Ten Phong %d: ", i + 1);
         scanf("%99s", arr[i].roomName);
