@@ -39,7 +39,6 @@ int timKyTu(char arr[], int size, char c) {
     }
     return -1;
 }
-
 int main() {
     char Array[6] = {'A', 'p', 't', 'e', 'c', 'h'};
     int size = 6;
@@ -59,7 +58,12 @@ int main() {
             printf("Lua chon khong hop le!\n");
             return 0;
     }
-
     printf("\n=> Ban da chon cach in so %d\n", result);
+    int pos = timKyTu(Array, size, 'p');
+    if (pos != -1) {
+        printf("Ky tu 'p' nam o vi tri: %d\n", pos);
+    } else {
+        printf("Khong tim thay ky tu 'p' trong mang!\n");
+    }
     return 0;
 }
