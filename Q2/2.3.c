@@ -5,7 +5,7 @@ typedef struct {
     int roomNo;
 } ClassRoom;
 
-void inputClassroom(ClassRoom classRooms[], int length)
+void enterClassroom(ClassRoom classRooms[], int length)
 {
     printf("=== Enter information for classroom ===\n");
     for (int i=0; i < length; i++)
@@ -29,8 +29,9 @@ void displayClassroom(ClassRoom classRooms[], int length)
 
 int main() 
 {
-    ClassRoom classRooms[10];
-    inputClassroom(classRooms, 2);
-    displayClassroom(classRooms, 2);
+    int length = 2;
+    ClassRoom classRooms[length];
+    enterClassroom(classRooms, length);
+    displayClassroom(classRooms, length);
     return 0;
 }
