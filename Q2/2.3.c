@@ -7,7 +7,7 @@ typedef struct {
 
 void inputClassroom(ClassRoom classRooms[], int length)
 {
-    printf("===Enter information for classroom===\n");
+    printf("=== Enter information for classroom ===\n");
     for (int i=0; i < length; i++)
     {
         printf("Room name: ");
