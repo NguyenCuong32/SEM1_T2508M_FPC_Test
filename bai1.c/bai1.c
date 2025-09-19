@@ -4,7 +4,7 @@ int main() {
     char a[] = {'A', 'p','t','e','c','h', '\0'};
     printf("%d\n", strlen(a));
     for(int i = 0 ; i < strlen(a) ; i++) {
-    	printf("%c\n",a[i]);
+    	printf("The element %d of the array is %c\n", i , a[i]);
 	}
     return 0;
 }

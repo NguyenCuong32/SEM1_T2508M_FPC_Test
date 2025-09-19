@@ -5,7 +5,7 @@ int main() {
 	char a[] = {'A', 'p','t','e','c','h', '\0'};
 	int i = 0;
 	do {
-		printf("%c\n", a[i]);
+		printf(" The element %d of the array is %c\n" , i ,  a[i]);
 		i++;
 	}while(i < strlen(a));
     return 0;
