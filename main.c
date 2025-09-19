@@ -1,7 +1,7 @@
 
 #include <stdio.h>
 
-void bai1_1()
+void bai1()
 {
     char Array[6] = {'A', 'p', 't', 'e', 'c', 'h'};
     printf("Vong Lap For\n");
@@ -24,11 +24,9 @@ void bai1_1()
         printf("%c ", Array[k]);
         k++;
     } while (k < 6);
-}
 
-void bai1_2()
-{
-    char Array[6] = {'A', 'p', 't', 'e', 'c', 'h'};
+    printf("\n");
+
     for (int i = 0; i < 6; i++)
     {
         if (Array[i] == 'p')
@@ -51,7 +49,7 @@ void bai2_1()
     scanf("%99s", cr.roomName);
     printf("Nhap So Phong: ");
     scanf("%d", &cr.roomNo);
-    printf("\nRoom name: %s\nRoom no: %d\n", cr.roomName, cr.roomNo);
+    printf("\nTen Phong: %s\nSo Phong: %d\n", cr.roomName, cr.roomNo);
 }
 
 struct ClassRoom arr[3];
@@ -96,27 +94,23 @@ int main()
     while (1)
     {
         int nhap;
-        printf("1. Bai 1.1\n2. Bai 1.2\n3. Bai 2.1\n4. Bai 2.2\n5. Bai 2.3\nNhap Lua Chon: ");
+        printf("1. Bai 1\n2. Bai 2.1\n3. Bai 2.2\n4. Bai 2.3\nNhap Lua Chon: ");
         scanf("%d", &nhap);
 
         switch (nhap)
         {
         case 1:
-            bai1_1();
+            bai1();
             break;
 
         case 2:
-            bai1_2();
-            break;
-
-        case 3:
             bai2_1();
             break;
 
-        case 4:
+        case 3:
             bai2_2();
             break;
-        case 5:
+        case 4:
             bai2_3();
             break;
 
