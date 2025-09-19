@@ -9,7 +9,7 @@ int position(char z, char a[],int n)
 
 int main()
 {
-    char array[6]={'A','P','T','E','C','H'};
+    char array[6]={'A','p','t','e','c','h'};
     int select, i;
     printf("1. Display on screen using for\n2. Display on screen using while\n3. Display on screen using do while\n");
     printf("Select number: \n");
@@ -43,6 +43,6 @@ int main()
     default:
         break;
     }
-    printf("The 'P' letter is at the position %d\n", position('P',array,6));
+    printf("The 'p' letter is at the position %d\n", position('p',array,6));
     return 0;
 }
