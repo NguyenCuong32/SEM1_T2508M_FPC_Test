@@ -29,13 +29,13 @@ int main() {
         printf("Room Name (<50 letters): ");
         while (scanf("%49s", ClassRooms[i].tenlop) != 1 || checkten(ClassRooms[i].tenlop, ClassRooms, i)!=1)
         {
-            printf("Wrong input or the name has already taked, try again: ");
+            printf("Wrong input or the name has already been taken, try again: ");
             while (getchar() != '\n');
         };
         printf("Room No: ");
         while (scanf(" %d", &ClassRooms[i].thutulop) != 1 || ClassRooms[i].thutulop < 0 || checkso(ClassRooms[i].thutulop,ClassRooms,i) != 1)
         {
-            printf("Wrong input or the number has already taked, try again: ");
+            printf("Wrong input or the number has already been taken, try again: ");
             while (getchar() != '\n');
         };
     }
