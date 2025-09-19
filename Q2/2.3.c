@@ -10,6 +10,7 @@ void enterClassroom(ClassRoom classRooms[], int length)
     printf("=== Enter information for classroom ===\n");
     for (int i=0; i < length; i++)
     {
+        printf("== Class room %d ==\n", i);
         printf("Room name: ");
         scanf(" %[^\n]", classRooms[i].roomName);
 

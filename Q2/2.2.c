@@ -5,7 +5,8 @@ typedef struct {
     int roomNo;
 } ClassRoom;
 
-int main() {
+int main() 
+{
     int length = 10;
     ClassRoom classRoom[length];
 
